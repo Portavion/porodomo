@@ -10,20 +10,20 @@ const cli = meow(
 	  $ porodomo
 
 	Options
-		--name  Your name
+		--length  Timer length in minutes
 
 	Examples
-	  $ porodomo --name=Jane
-	  Hello, Jane
+	  $ porodomo --length=5
+	  Starting a 5 min timer
 `,
 	{
 		importMeta: import.meta,
 		flags: {
-			name: {
-				type: 'string',
+			length: {
+				type: 'number',
 			},
 		},
 	},
 );
 
-render(<App name={cli.flags.name} />);
+render(<App length={cli.flags.length} />);

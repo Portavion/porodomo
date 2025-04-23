@@ -5,7 +5,7 @@
 ## Install
 
 ```bash
-$ npm install --global porodomo
+npm install --global porodomo
 ```
 
 ## CLI
@@ -17,9 +17,9 @@ $ porodomo --help
     $ porodomo
 
   Options
-    --name  Your name
+    --length  Timer length in minutes
 
   Examples
-    $ porodomo --name=Jane
-    Hello, Jane
+    $ porodomo --length=5
+    timer 0s/5 minutes timer
 ```

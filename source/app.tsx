@@ -25,12 +25,24 @@ export default function App({length = 25}: Props) {
 	});
 
 	return (
-		<Text>
-			Timer{' '}
-			<Text color="green">
-				{Math.floor(counter)}/{length * 60}
-			</Text>{' '}
-			seconds timer
-		</Text>
+		<>
+			<Text>
+				{`
+
+▗▄▄▖  ▄▄▄   ▄▄▄ ▄▄▄     ▐▌ ▄▄▄  ▄▄▄▄   ▄▄▄
+▐▌ ▐▌█   █ █   █   █    ▐▌█   █ █ █ █ █   █
+▐▛▀▘ ▀▄▄▄▀ █   ▀▄▄▄▀ ▗▞▀▜▌▀▄▄▄▀ █   █ ▀▄▄▄▀
+▐▌                   ▝▚▄▟▌
+
+`}
+			</Text>
+			<Text>
+				Timer{' '}
+				<Text color="green">
+					{Math.floor(counter)}/{length * 60}
+				</Text>{' '}
+				seconds timer
+			</Text>
+		</>
 	);
 }

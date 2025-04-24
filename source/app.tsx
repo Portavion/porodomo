@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Text, useApp, useStdout} from 'ink';
+import AsciiArt from './components/AsciiArt.js';
 
 type Props = {
 	length: number | undefined;
@@ -26,16 +27,7 @@ export default function App({length = 25}: Props) {
 
 	return (
 		<>
-			<Text>
-				{`
-
-▗▄▄▖  ▄▄▄   ▄▄▄ ▄▄▄     ▐▌ ▄▄▄  ▄▄▄▄   ▄▄▄
-▐▌ ▐▌█   █ █   █   █    ▐▌█   █ █ █ █ █   █
-▐▛▀▘ ▀▄▄▄▀ █   ▀▄▄▄▀ ▗▞▀▜▌▀▄▄▄▀ █   █ ▀▄▄▄▀
-▐▌                   ▝▚▄▟▌
-
-`}
-			</Text>
+			<AsciiArt />
 			<Text>
 				Timer{' '}
 				<Text color="green">
